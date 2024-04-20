@@ -5,5 +5,25 @@
   "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
 
   "remoteUser": "codespace",
-  "overrideCommand": false
+  "overrideCommand": false,
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "installMaven": true,
+      "installAnt": true,
+      "installGroovy": true,
+      "version": "17",
+      "jdkDistro": "ms",
+      "gradleVersion": "latest",
+      "mavenVersion": "3.8.6",
+      "antVersion": "latest",
+      "groovyVersion": "2.5.22"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vmware.vscode-boot-dev-pack"
+      ]
+    }
+  }
 }
