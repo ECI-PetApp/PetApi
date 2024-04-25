@@ -11,9 +11,8 @@ import com.eci.pet.register.domain.repositories.PetOwnerRepository;
 import com.eci.pet.register.domain.repositories.PetRepository;
 import lombok.AllArgsConstructor;
 
-
-// @AllArgsConstructor
-// @Service
+@AllArgsConstructor
+@Service
 public class PetUseCase {
 
     private final PetRepository petRepo;
