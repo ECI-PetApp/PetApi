@@ -14,7 +14,7 @@ public class helloController {
 
     @GetMapping("/hello")
     public String getMethodName() {
-        return "hello from my first spring api";
+        return "hello from my first spring api :)";
     }
     
 }
