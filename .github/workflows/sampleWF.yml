@@ -1,0 +1,24 @@
+name: Build, Test and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Cambiar a la rama que desees
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout code
+          run: echo "Checkout code"
+    
+        - name: build
+          run: echo "build code"
+
+    test:
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+        - name: execute unit tests
+          run: echo "execute unit tests"
+    
