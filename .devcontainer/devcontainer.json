@@ -2,7 +2,8 @@
   // Name this configuration
   "name": "Codespace for Skills!",
   // Use the base codespace image
-  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+  // "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+  "image": "mcr.microsoft.com/devcontainers/java",
 
   "remoteUser": "codespace",
   "overrideCommand": false,
@@ -17,7 +18,9 @@
       "mavenVersion": "3.8.6",
       "antVersion": "latest",
       "groovyVersion": "2.5.22"
-    }
+    },
+    "ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
+    "ghcr.io/devcontainers-contrib/features/scancode-toolkit:1": {}
   },
   "customizations": {
     "vscode": {
@@ -25,7 +28,8 @@
         "vmware.vscode-boot-dev-pack",
         "GitHub.vscode-github-actions",
         "redhat.fabric8-analytics",
-        "SonarSource.sonarlint-vscode"
+        "SonarSource.sonarlint-vscode",
+        "vscjava.vscode-java-pack"
       ]
     }
   }
