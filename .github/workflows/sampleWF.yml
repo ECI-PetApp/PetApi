@@ -6,18 +6,18 @@ on:
       - main  # Cambiar a la rama que desees
 
 jobs:
-    build:
+    buildIvan:
         runs-on: ubuntu-latest
         steps:
-        - name: Checkout code
+        - name: Checkout code        
           run: echo "Checkout code"
     
         - name: build
           run: echo "build code"
 
-    test:
+    testAngie:
         runs-on: ubuntu-latest
-        needs: build
+        #needs: build
         steps:
         - name: execute unit tests
           run: echo "execute unit tests"
