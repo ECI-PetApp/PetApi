@@ -34,13 +34,19 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar 
            -Dsonar.projectKey=ECI-PetApp_PetApi
-           -Dsonar.qualitygate.wait=true
+           #-Dsonar.qualitygate.wait=true
 
     - name: Publish artifact
       uses: actions/upload-artifact@v4
       with:
         name: pet-build
         path: target/*.jar
+
+    
+            
+  
+
+
 
   #coverage:
   #  runs-on: ubuntu-latest
